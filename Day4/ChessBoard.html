@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chess Board</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 5%;
+            margin: 0;
+            background-color: #e2e2d9;
+            flex-direction: column; /* Ensures the heading is on top of the table */
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px; /* Adds space between the heading and the table */
+        }
+        td {
+            width: 130px;
+            height: 90px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+        }
+        h1 {
+            font-family: 'Arial'; 
+            font-size: 50px; 
+            color: #333; 
+            margin-bottom: 20px; 
+            padding: 10px;
+            background-color: #8c7387;
+            letter-spacing: 1px; 
+            border-radius: 30px;
+           
+        }
+        h1:hover{
+            transform: scale(0.9);
+
+        }
+        
+        tr:nth-child(even) td:nth-child(odd),
+        tr:nth-child(odd) td:nth-child(even) {
+            background-color: black;
+        }
+        tr:nth-child(even) td:nth-child(even),
+        tr:nth-child(odd) td:nth-child(odd) {
+            background-color: rgb(195, 198, 180);
+        }
+        
+        .chess-piece {
+            color: rgb(198, 107, 198);
+            display: inline-block; 
+        }
+        .chess-piece2 {
+            color: rgb(63, 150, 222);
+            display: inline-block; 
+        }
+        .chess-piece:hover {
+            transform: scale(1.2);
+        }
+        .chess-piece2:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Wanna Play!??</h1>
+
+    <table>
+        <!-- Top Rows -->
+        <tr>
+            <td><span class="chess-piece">&#9820;</span></td>
+            <td><span class="chess-piece">&#9822;</span></td>
+            <td><span class="chess-piece">&#9821;</span></td>
+            <td><span class="chess-piece">&#9819;</span></td>
+            <td><span class="chess-piece">&#9818;</span></td>
+            <td><span class="chess-piece">&#9821;</span></td>
+            <td><span class="chess-piece">&#9822;</span></td>
+            <td><span class="chess-piece">&#9820;</span></td>
+        </tr>
+        <tr>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+            <td><span class="chess-piece">&#9823;</span></td>
+        </tr>
+        <!-- Empty rows -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!-- Bottom Rows -->
+        <tr>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+            <td><span class="chess-piece2">&#9817;</span></td>
+        </tr>
+        <tr>
+            <td><span class="chess-piece2">&#9814;</span></td>
+            <td><span class="chess-piece2">&#9816;</span></td>
+            <td><span class="chess-piece2">&#9815;</span></td>
+            <td><span class="chess-piece2">&#9813;</span></td>
+            <td><span class="chess-piece2">&#9812;</span></td>
+            <td><span class="chess-piece2">&#9815;</span></td>
+            <td><span class="chess-piece2">&#9816;</span></td>
+            <td><span class="chess-piece2">&#9814;</span></td>
+        </tr>
+    </table>
+</body>
+</html>
