@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="task2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(203, 192, 177);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Add Flexbox to the row class */
+        .row {
+            display: flex;            /* Enable Flexbox layout */
+            justify-content: center;  /* Align items to the center */
+            margin-bottom: 20px;
+            flex-wrap: wrap;          /* Allow items to wrap to the next line */
+        }
+
+        /* For the image box */
+        .image-box, .image-box2 {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+        }
+
+        /* Set fixed width and height for images */
+        .image-box img, .image-box2 img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover; /* Ensures the images maintain their aspect ratio and fill the container */
+        }
+
+        /* Image label style */
+        .image-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: black; /* Semi-transparent background for better visibility */
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        /* Add responsiveness for smaller screens */
+        @media (max-width: 600px) {
+            .image-box img, .image-box2 img {
+                width: 100%; /* Make the images responsive */
+                height: auto;
+            }
+
+            .row {
+                justify-content: space-around; /* Space out images evenly on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Whimsy World</h1>
+
+    <div class="row">
+        <div class="image-box">
+            <div class="image-label">Floating Balloons</div>
+            <img src="https://www.tranceformpsychology.com/wp-content/uploads/2015/03/Globophobia-Fear-of-Balloons.jpg" alt="Floating Balloons">
+        </div>
+        <div class="image-box">
+            <div class="image-label">Cupcakes</div>
+            <img src="https://images.stockcake.com/public/c/3/0/c30af164-199f-4c70-b388-de1f8f17ae5b_large/colorful-cupcake-faces-stockcake.jpg" alt="Cupcakes with Faces">
+        </div>
+        <div class="image-box">
+            <div class="image-label">Sleeping Stars</div>
+            <img src="https://t4.ftcdn.net/jpg/08/61/60/49/360_F_861604964_m6UBu4bZUXzZYR5UXyBIFFDCVA9rb7rH.jpg" alt="Sleeping Stars">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-box2">
+            <div class="image-label">Rainbow Clouds</div>
+            <img src="https://img.freepik.com/premium-photo/black-haired-cute-girl-with-her-dad-dad-noticing-girl-watch-rainbow-from-boat_1295550-3196.jpg" alt="Rainbow clouds">
+        </div>
+        <div class="image-box2">
+            <div class="image-label">Fairy Lights in Jars</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfyP3UXxevP7zkE_OEwIqc1B3cHSluq25IOw&s" alt="Fairy Lights in Jars">
+        </div>
+        <div class="image-box2">
+            <div class="image-label">Floating Books</div>
+            <img src="https://i.pinimg.com/736x/3f/4c/39/3f4c39b9d1d1f9dccd7ccd7588104988.jpg" alt="Floating Books">
+        </div>
+    </div>
+</body>
+</html>
