@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.skincare {
+    font-size: 27px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 21px;
+    color: rgb(195, 9, 246);
+}
+
+.inner-container1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(252, 140, 222);
+    box-shadow: 10px 15px 31px rgb(215, 123, 175);
+    padding: 20px;
+}
+.inner-container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(252, 140, 222);
+    box-shadow: 10px 15px 31px rgb(215, 123, 175);
+    padding: 20px;
+}
+
+
+
+.product-1, .product-2, .product-3, 
+.product-4, .product-5, .product-6 {
+    background-color: whitesmoke;
+    flex-basis: 30%;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 10px 15px 31px rgb(130, 127, 127);
+}
+.skincare2 img {
+width: 100%;
+height: 150px; 
+object-fit: cover;
+}
+
+.skincare1 {
+display: flex;
+padding: 15px;
+width: 95%;
+margin: 0 auto;
+align-items: stretch;
+}
+
+.skincare3 {
+display: flex;
+flex-direction: column;
+padding-left: 25px;
+flex-basis: 50%;
+justify-content: space-between; 
+}
+
+
+.name {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.name:hover {
+    color: rgb(247, 54, 192);
+}
+
+.star {
+    margin-top: 7px;
+    color: rgb(241, 135, 59);
+}
+
+.star:hover {
+    color: rgb(22, 203, 76);
+}
+
+.brand {
+    font-family: "Roboto", serif;
+    font-weight: 550;
+    color: rgb(119, 122, 122);
+    font-size: 17px;
+}
+
+.image {
+    width: 100%; 
+    height: 300px;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    padding-top: 5px;
+    margin-bottom: 11px;
+}
+
+.info-a {
+    font-family: "Roboto", serif;
+    font-size: 17px;
+}
+
+.design {
+    font-weight: 800;
+    word-spacing: 1.5px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px auto 25px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bestsellers {
+    font-size: 19px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+a:hover .bestsellers {
+    color: blue;
+    text-shadow: 0px 1px 1px rgb(122, 118, 122);
+    font-size: 20px;
+}
+
+a:active .bestsellers {
+    color: red;
+    text-shadow: 0px 1px 1px rgb(122, 118, 122);
+    text-decoration: underline rgb(218, 29, 224);
+}
+
+.product-1:hover, .product-2:hover, .product-3:hover, 
+.product-4:hover, .product-5:hover, .product-6:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .inner-container1, .inner-container2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .product-1, .product-2, .product-3, 
+    .product-4, .product-5, .product-6 {
+        flex-basis: 90%; 
+        margin: 10px 0; 
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 18px; 
+    }
+
+    .star {
+        font-size: 14px; 
+    }
+
+    .info-a {
+        font-size: 14px; 
+    }
+
+    .image {
+        height: 180px; 
+    }
+}
+
+/* Media Queries for Small Mobile Devices */
+@media (max-width: 480px) {
+    .skincare {
+        font-size: 20px; 
+    }
+
+    .name {
+        font-size: 16px; 
+    }
+
+    .info-a {
+        font-size: 12px; 
+    }
+
+    .image {
+        height: 150px; 
+    }
+}
+
