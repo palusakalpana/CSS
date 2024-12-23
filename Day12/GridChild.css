@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f1ea; 
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "sidebar footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff; 
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #d7bfa6; 
+    color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8em;
+    border-radius: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e8c9a3; 
+    color: #070707;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    align-content: center;
+    
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "main-item1 main-item2"
+        "main-item3 main-item3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 15px;
+    background-color: #fdf2be; 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main-item1 {
+    grid-area: main-item1;
+    background-color: #918f8d; 
+    color: rgb(11, 11, 11);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.main-item2 {
+    grid-area: main-item2;
+    background-color: #e0bda4; 
+    color: #0c0c0c; 
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.main-item3 {
+    grid-area: main-item3;
+    background-color: #caae70; 
+    color: rgb(16, 16, 16);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #d7bfa6; 
+    color: rgb(13, 12, 12);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
