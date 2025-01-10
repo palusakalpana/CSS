@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        img {
+            transition: all 3s ease;
+            transform: none;
+            margin-top: 10%;
+            margin-left: 10%;
+            position: absolute; 
+        }
+
+        /* Transformations applied only when the corresponding target is active */
+        #translate:target ~ .image img {
+            transform: translate(200px, 200px);
+        }
+
+        #rotate:target ~ .image img {
+            transform: rotate(90deg);
+        }
+
+        #scale:target ~ .image img {
+            transform: scale(1.5);
+        }
+
+        #skew:target ~ .image img {
+            transform: skew(20deg, 20deg);
+        }
+
+        /* Hidden target divs to control :target */
+        #translate, #rotate, #scale, #skew {
+            display: none;
+        }
+        
+@media screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .container a {
+        display: block;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    img {
+        width: 80%;
+        margin-left: 0;
+        position: static;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-bottom: 10px;
+    }
+
+    .container a {
+        font-size: 12px;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 5%;
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Links to apply transformations -->
+        
+        <a href="#rotate">Rotate</a>
+        <a href="#scale">Scale</a>
+        <a href="#skew">Skew</a>
+        <a href="#translate">Translate</a>
+    </div>
+
+    <!-- Hidden divs for :target functionality -->
+    
+    <div id="rotate"></div>
+    <div id="scale"></div>
+    <div id="skew"></div>
+    <div id="translate"></div>
+
+    <!-- Image container -->
+    <div class="image">
+        <img src="https://t4.ftcdn.net/jpg/00/69/95/59/360_F_69955909_z69S8oSh8HVlfP1XGDaBXL81s1zJGz15.jpg" alt="Sample Image">
+    </div>
+</body>
+</html>

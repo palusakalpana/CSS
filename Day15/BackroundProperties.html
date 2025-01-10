@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+    
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            position: relative; 
+        }
+        .section1 {
+            height: 100vh;
+            background-image: url("https://img.freepik.com/premium-photo/commercial-airplane-flying-clouds-sunset_9493-27337.jpg");
+        }
+        .section2 {
+            height: 100vh;
+            background-image: url("https://images.stockcake.com/public/1/f/e/1fe6de69-d3d2-4128-a418-49524d98fa0b_large/eiffel-tower-night-stockcake.jpg");
+        }
+        .section3 {
+            height: 100vh;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/034/496/233/small_2x/statue-of-liberty-and-new-york-city-skyline-at-sunset-usa-statue-liberty-and-new-york-city-skyline-at-sunset-ai-generated-free-photo.jpg");
+        }
+        .section4 {
+            height: 100vh;
+            background-image: url("https://www.japan-guide.com/ad/g/hanami2020_01.jpg");
+        }
+        .section5 {
+            height: 100vh;
+            background-image: url("https://img.freepik.com/premium-photo/romantic-gondola-ride-through-canals-venice-with-beautiful-sunset-background_14117-636609.jpg");
+        }
+        .section6 {
+            height: 100vh;
+            background-image: url("https://images.stockcake.com/public/0/0/a/00ab44cf-0c57-4ff0-840b-e8212e5c7942_large/starry-egyptian-night-stockcake.jpg");
+        }
+        .section7 {
+            height: 100vh;
+            background-image: url("https://img.freepik.com/premium-photo/photo-sydney-opera-house-with-stunning-harbor-view-as-background-vibrant-n_1046467-45.jpg");
+        }
+        .text-dream, .text-paris, .text-newyork,.text-tokyo, .text-venice, .text-cairo, .text-sydney {
+            position: absolute;
+            top: 10%; 
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        @media screen and (max-width: 768px) {
+            .section {
+                height: 100vh; 
+            }
+            .text-dream, .text-paris, .text-newyork, .text-tokyo, .text-venice, .text-cairo, .text-sydney {
+                font-size: 2.5rem; 
+            }
+        }
+
+        
+        @media screen and (max-width: 480px) {
+            .section {
+                height: 100vh; 
+               
+            }
+            .text-dream, .text-paris, .text-newyork, .text-tokyo, .text-venice, .text-cairo, .text-sydney {
+                font-size: 2rem; 
+                top: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section section1">
+        <div class="text-dream">Dream Destinations</div>
+    </div>
+    <div class="section section2">
+        <div class="text-paris">Paris</div>
+    </div>
+    <div class="section section3">
+        <div class="text-newyork">New York</div>
+    </div>
+    <div class="section section4">
+        <div class="text-tokyo">Tokyo</div>
+    </div>
+    <div class="section section5">
+        <div class="text-venice ">Venice </div>
+    </div>
+    <div class="section section6">
+        <div class="text-cairo">Cairo</div>
+    </div>
+    <div class="section section7">
+        <div class="text-sydney">Sydney</div>
+    </div>
+    
+</body>
+</html>

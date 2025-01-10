@@ -1,0 +1,94 @@
+/* Base Styles (Light Mode) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff; /* Light background for nav */
+    color: black;
+    border-bottom: 2px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav .nav-item {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0c0c0c; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.w3-dark-grey {
+    background-color: black; /* Dark background */
+    color: white;
+}
+
+.w3-dark-grey .nav {
+    background-color: grey; /* Dark background for nav */
+    color: white;
+}
+
+.w3-dark-grey button {
+    background-color: #555; /* Darker button */
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav .nav-item {
+        padding: 5px 0;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .nav {
+        padding: 8px;
+    }
+
+    .nav .nav-item {
+        font-size: 12px;
+        padding: 3px 0;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 3px;
+    }
+}
